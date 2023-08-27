@@ -6,6 +6,8 @@ Understanding the finer details of a 3D object, its contours, is the first step 
 <img width="834" alt="pipeline" src="https://github.com/santhanamhari/Automated-Line-Labelling-Dataset/assets/40223805/c84e2ae4-1ba4-4b05-a81a-db25aa1518fe">
 
 
+
+
 The code to generate the dataset is broken into the following sections:
 
   * [Setup and Dependencies](#setup-and-dependencies)
