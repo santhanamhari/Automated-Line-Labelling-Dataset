@@ -12,19 +12,6 @@ The code to generate the dataset is broken into the following sections:
   * [Download Data](#download-data)
   * [Training](#training)
   * [Evaluation](#evaluation)
-  * [Pretrained Checkpoint](#pretrained-checkpoint)
-
-If you use this code in your research, please consider citing:
-
-```text
-@inproceedings{santhanam2023automated,
-  title={Automated Line Labelling: Dataset for Contour Detection and 3D Reconstruction},
-  author={Santhanam, Hari and Doiphode, Nehal and Shi, Jianbo},
-  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
-  pages={3136--3145},
-  year={2023}
-}
-```
 
 
 Setup and Dependencies
@@ -101,13 +88,20 @@ This will generate an EvalAI submission file, and report metrics from the [Visua
 The metrics reported here would be the same as those reported through EvalAI by making a submission in `val` phase. To generate a submission file for `test-std` or `test-challenge` phase, replace `--split val` with `--split test`.
 
 
-Results and pretrained checkpoints
+Results
 ----------------------------------
 
-Performance on `v1.0 test-std` (trained on `v1.0` train + val):
 
-  Model  |  R@1   |  R@5   |  R@10  | MeanR  |  MRR   |  NDCG  |
- ------- | ------ | ------ | ------ | ------ | ------ | ------ |
-[lf-disc-faster-rcnn-x101][12] | 0.4617 | 0.7780 | 0.8730 |  4.7545| 0.6041 | 0.5162 |
-[lf-gen-faster-rcnn-x101][20]  | 0.3620 | 0.5640 | 0.6340 | 19.4458| 0.4657 | 0.5421 |
+Publication
+----------------------------------
+If you use this code in your research, please consider citing:
 
+```text
+@inproceedings{santhanam2023automated,
+  title={Automated Line Labelling: Dataset for Contour Detection and 3D Reconstruction},
+  author={Santhanam, Hari and Doiphode, Nehal and Shi, Jianbo},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={3136--3145},
+  year={2023}
+}
+```
