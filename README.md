@@ -1,4 +1,4 @@
-Visual Dialog Challenge Starter Code
+Dataset for Contour Detection and 3D Reconstruction
 ====================================
 
 PyTorch starter code for the [Visual Dialog Challenge 2019][1].
@@ -13,11 +13,12 @@ PyTorch starter code for the [Visual Dialog Challenge 2019][1].
 If you use this code in your research, please consider citing:
 
 ```text
-@misc{desai2018visdialch,
-  author =       {Karan Desai and Abhishek Das and Dhruv Batra and Devi Parikh},
-  title =        {Visual Dialog Challenge Starter Code},
-  howpublished = {\url{https://github.com/batra-mlp-lab/visdial-challenge-starter-pytorch}},
-  year =         {2018}
+@inproceedings{santhanam2023automated,
+  title={Automated Line Labelling: Dataset for Contour Detection and 3D Reconstruction},
+  author={Santhanam, Hari and Doiphode, Nehal and Shi, Jianbo},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={3136--3145},
+  year={2023}
 }
 ```
 
