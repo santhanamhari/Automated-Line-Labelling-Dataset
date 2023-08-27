@@ -32,9 +32,6 @@ If you use this code in your research, please consider citing:
 Setup and Dependencies
 ----------------------
 
-This starter code is implemented using PyTorch v1.0, and provides out of the box support with CUDA 9 and CuDNN 7.
-There are two recommended ways to set up this codebase: Anaconda or Miniconda, and Docker.
-
 ### Anaconda or Miniconda
 
 1. Install Anaconda or Miniconda distribution based on Python3+ from their [downloads' site][2].
