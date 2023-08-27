@@ -6,8 +6,6 @@ Understanding the finer details of a 3D object, its contours, is the first step 
 <img width="834" alt="pipeline" src="https://github.com/santhanamhari/Automated-Line-Labelling-Dataset/assets/40223805/c84e2ae4-1ba4-4b05-a81a-db25aa1518fe">
 
 
-
-
 The code to generate the dataset is broken into the following sections:
 
   * [Setup and Dependencies](#setup-and-dependencies)
@@ -32,48 +30,18 @@ If you use this code in your research, please consider citing:
 Setup and Dependencies
 ----------------------
 
-### Anaconda or Miniconda
-
-1. Install Anaconda or Miniconda distribution based on Python3+ from their [downloads' site][2].
-2. Clone this repository and create an environment:
+Clone this repository and create an environment:
 
 ```sh
-git clone https://www.github.com/batra-mlp-lab/visdial-challenge-starter-pytorch
-conda create -n visdialch python=3.6
+git clone https://github.com/santhanamhari/Automated-Line-Labelling-Dataset.git
+conda create -n py310 python=3.10
 
-# activate the environment and install all dependencies
-conda activate visdialch
-cd visdial-challenge-starter-pytorch/
+# activate environment
+conda activate py310
+
+# install dependencies
 pip install -r requirements.txt
-
-# install this codebase as a package in development version
-python setup.py develop
 ```
-
-**Note:** Docker setup is necessary if you wish to extract image features using Detectron.
-
-### Docker
-
-We provide a Dockerfile which creates a light-weight image with all the dependencies installed.
-
-1. Install [nvidia-docker][18], which enables usage of GPUs from inside a container.
-2. Build the image as:
-
-```sh
-cd docker
-docker build -t visdialch .
-```
-
-3. Run this image in a container by setting user+group, attaching project root (this codebase) as a volume and setting shared memory size according to your requirements (depends on the memory usage of your model).
-
-```sh
-nvidia-docker run -u $(id -u):$(id -g) \
-                  -v $PROJECT_ROOT:/workspace \
-                  --shm-size 16G visdialch /bin/bash
-```
-
-We recommend this development workflow, attaching the codebase as a volume would immediately reflect source code changes inside the container environment. We also recommend containing all the source code for data loading, models and other utilities inside `visdialch` directory. Since it is a setuptools-style package, it makes handling of absolute/relative imports and module resolving less painful. Scripts using `visdialch` can be created anywhere in the filesystem, as far as the current conda environment is active.
-
 
 Download Data
 -------------
