@@ -1,14 +1,15 @@
 Dataset for Contour Detection and 3D Reconstruction
 ====================================
 
-PyTorch starter code for the [Visual Dialog Challenge 2019][1].
+Understanding the finer details of a 3D object, its contours, is the first step toward a physical understanding of an object. Many real-world application domains require adaptable 3D object shape recognition models, usually with little training data. For this purpose, we develop the first automatically generated contour labeled dataset, bypassing manual human labeling. Using this dataset, we study the performance of current state-of-the-art instance segmentation algorithms on detecting and labeling the contours. We produce promising visual results with accurate contour prediction and labeling. We demonstrate that our finely labeled contours can help downstream tasks in computer vision, such as 3D reconstruction from a 2D image.
+
+The code to generate the dataset is broken into the following sections:
 
   * [Setup and Dependencies](#setup-and-dependencies)
   * [Download Data](#download-data)
   * [Training](#training)
   * [Evaluation](#evaluation)
   * [Pretrained Checkpoint](#pretrained-checkpoint)
-  * [Acknowledgements](#acknowledgements)
 
 If you use this code in your research, please consider citing:
 
@@ -21,20 +22,6 @@ If you use this code in your research, please consider citing:
   year={2023}
 }
 ```
-
-[![DOI](https://zenodo.org/badge/140210239.svg)](https://zenodo.org/badge/latestdoi/140210239)
-
-
-What's new with `v2019`?
-------------------------
-
-If you are a returning user (from Visual Dialog Challenge 2018), here are some key highlights about our offerings in `v2019` of this starter code:
-
-1. _Almost_ a complete rewrite of `v2018`, which increased speed, readability, modularity and extensibility.
-2. Multi-GPU support - try out specifying GPU ids to train/evaluate scripts as: `--gpu-ids 0 1 2 3`
-3. Docker support - we provide a Dockerfile which can help you set up all the dependencies with ease.
-4. Stronger baseline - our Late Fusion Encoder is equipped with [Bottom-up Top-Down attention][6]. We also provide pre-extracted image features (links below).
-5. Minimal pre-processed data - no requirement to download tens of pre-processed data files anymore (were typically referred as `visdial_data.h5` and `visdial_params.json`).
 
 
 Setup and Dependencies
@@ -154,30 +141,3 @@ Performance on `v1.0 test-std` (trained on `v1.0` train + val):
 [lf-disc-faster-rcnn-x101][12] | 0.4617 | 0.7780 | 0.8730 |  4.7545| 0.6041 | 0.5162 |
 [lf-gen-faster-rcnn-x101][20]  | 0.3620 | 0.5640 | 0.6340 | 19.4458| 0.4657 | 0.5421 |
 
-
-Acknowledgements
-----------------
-
-* This starter code began as a fork of [batra-mlp-lab/visdial-rl][14]. We thank the developers for doing most of the heavy-lifting.
-* The Lua-torch codebase of Visual Dialog, at [batra-mlp-lab/visdial][15], served as an important reference while developing this codebase.
-* Some documentation and design strategies of `Metric`, `Reader` and `Vocabulary` classes are inspired from [AllenNLP][17], It is not a dependency because the use-case in this codebase would be too little in its current state.
-
-[1]: https://visualdialog.org/challenge/2019
-[2]: https://conda.io/docs/user-guide/install/download.html
-[3]: http://images.cocodataset.org/zips/train2014.zip
-[4]: http://images.cocodataset.org/zips/val2014.zip
-[5]: https://www.github.com/lanpa/tensorboardX
-[6]: https://arxiv.org/abs/1707.07998
-[7]: https://visualdialog.org/data
-[9]: https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/visdial_1.0_word_counts_train.json
-[10]: https://visualdialog.org/data
-[11]: http://www.robots.ox.ac.uk/~vgg/research/very_deep/
-[12]: https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/lf_disc_faster_rcnn_x101_trainval.pth
-[13]: https://arxiv.org/abs/1611.08669
-[14]: https://www.github.com/batra-mlp-lab/visdial-rl
-[15]: https://www.github.com/batra-mlp-lab/visdial
-[16]: https://visualdialog.org/challenge/2018#faq
-[17]: https://www.github.com/allenai/allennlp
-[18]: https://www.github.com/nvidia/nvidia-docker
-[19]: https://github.com/batra-mlp-lab/visdial-challenge-starter-pytorch/blob/master/visdialch/utils/checkpointing.py
-[20]: https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/lf_gen_faster_rcnn_x101_train.pth
