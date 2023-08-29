@@ -9,7 +9,7 @@ Understanding the finer details of a 3D object, its contours, is the first step 
 The code to generate the dataset is broken into the following sections:
 
   * [Setup and Dependencies](#setup-and-dependencies)
-  * [Download Data](#download-data)
+  * [Usage](#download-data)
   * [Training](#training)
   * [Evaluation](#evaluation)
 
@@ -17,37 +17,32 @@ The code to generate the dataset is broken into the following sections:
 Setup and Dependencies
 ----------------------
 
-Clone this repository and create an environment:
+Clone this repository, create an environment, and install dependencies:
 
 ```sh
 git clone https://github.com/santhanamhari/Automated-Line-Labelling-Dataset.git
-conda create -n py310 python=3.10
+conda create -n line_label python=3.10
 
 # activate environment
-conda activate py310
+conda activate line_label
 
 # install dependencies
 pip install -r requirements.txt
 ```
 
-Download Data
+Usage
 -------------
+We provide the code for generating our dataset in the `code` folder. 
+The `main.py` script processes the stl meshes from the `raw_meshes` folder and renders images (in `output`)
 
-1. Download the VisDial v1.0 dialog json files from [here][7] and keep it under `$PROJECT_ROOT/data` directory, for default arguments to work effectively.
 
-2. Get the word counts for VisDial v1.0 train split [here][9]. They are used to build the vocabulary.
 
-3. We also provide pre-extracted image features of VisDial v1.0 images, using a Faster-RCNN pre-trained on Visual Genome. If you wish to extract your own image features, skip this step and download VIsDial v1.0 images from [here][7] instead. Extracted features for v1.0 train, val and test are available for download at these links.
+To generate the dataset, run the following line of code:
 
-  * [`features_faster_rcnn_x101_train.h5`](https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/features_faster_rcnn_x101_train.h5): Bottom-up features of 36 proposals from images of `train` split.
-  * [`features_faster_rcnn_x101_val.h5`](https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/features_faster_rcnn_x101_val.h5): Bottom-up features of 36 proposals from images of `val` split.
-  * [`features_faster_rcnn_x101_test.h5`](https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/features_faster_rcnn_x101_test.h5): Bottom-up features of 36 proposals from images of `test` split.
+```sh
+python3 code/main.py
+```
 
-4. We also provide pre-extracted FC7 features from VGG16, although the `v2019` of this codebase does not use them anymore.
-
-  * [`features_vgg16_fc7_train.h5`](https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/features_vgg16_fc7_train.h5): VGG16 FC7 features from images of `train` split.
-  * [`features_vgg16_fc7_val.h5`](https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/features_vgg16_fc7_val.h5): VGG16 FC7 features from images of `val` split.
-  * [`features_vgg16_fc7_test.h5`](https://s3.amazonaws.com/visual-dialog/data/v1.0/2019/features_vgg16_fc7_test.h5): VGG16 FC7 features from images of `test` split.
 
 
 Training
