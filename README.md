@@ -47,7 +47,12 @@ To generate the dataset, run the following line of code:
 python3 code/main.py
 ```
 
-This will generate the rendered images (`output/images`), extracted/classified contours (`output/gt_edges`), and grouped contours (`output/groups`). This may take some time to render, so the full results are in the `results` folder. 
+This will generate:
+ - rendered images (`output/images`)
+ - extracted/classified contours (`output/gt_edges`)
+ - grouped contours (`output/groups`) 
+
+This may take some time to render, so the full results are in the `results` folder. 
 
 
 Results
