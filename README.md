@@ -58,7 +58,10 @@ This may take some time to render, so the full results are in the `results` fold
 Results
 ----------
 
+Sample contour results (yellow - obscuring; blue - concave; green - convex)
 
+
+Sample grouping results (unique colors indicate unique groups)
 
 
 Publication
