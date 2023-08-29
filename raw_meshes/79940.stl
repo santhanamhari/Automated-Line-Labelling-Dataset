@@ -1,0 +1,198 @@
+solid Exported from Blender-2.63 (sub 13)
+facet normal 0 0 0
+outer loop
+vertex 29.396229 29.396229 2.500000
+vertex 50.603764 29.396229 2.500000
+vertex 50.603764 50.603764 2.500000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 50.603764 50.603764 2.500000
+vertex 29.396229 50.603764 2.500000
+vertex 29.396229 29.396229 2.500000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 29.396229 50.603764 51.000000
+vertex 27.499989 52.500004 51.000000
+vertex 27.499989 27.499989 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 27.499989 27.499989 51.000000
+vertex 29.396229 29.396229 51.000000
+vertex 29.396229 50.603764 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 29.396229 50.603764 2.500000
+vertex 29.396229 50.603764 51.000000
+vertex 29.396229 29.396229 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 29.396229 29.396229 51.000000
+vertex 29.396229 29.396229 2.500000
+vertex 29.396229 50.603764 2.500000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 50.603764 29.396229 2.500000
+vertex 50.603764 29.396229 51.000000
+vertex 50.603764 50.603764 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 50.603764 50.603764 51.000000
+vertex 50.603764 50.603764 2.500000
+vertex 50.603764 29.396229 2.500000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 50.603764 29.396229 51.000000
+vertex 50.603764 29.396229 2.500000
+vertex 29.396229 29.396229 2.500000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 29.396229 29.396229 2.500000
+vertex 29.396229 29.396229 51.000000
+vertex 50.603764 29.396229 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 50.603764 50.603764 2.500000
+vertex 50.603764 50.603764 51.000000
+vertex 29.396229 50.603764 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 29.396229 50.603764 51.000000
+vertex 29.396229 50.603764 2.500000
+vertex 50.603764 50.603764 2.500000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 52.500004 52.500004 51.000000
+vertex 52.500004 52.500004 0.000000
+vertex 27.499989 52.500004 0.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 27.499989 52.500004 0.000000
+vertex 27.499989 52.500004 51.000000
+vertex 52.500004 52.500004 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 50.603764 29.396229 51.000000
+vertex 52.500004 27.499989 51.000000
+vertex 52.500004 52.500004 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 52.500004 52.500004 51.000000
+vertex 50.603764 50.603764 51.000000
+vertex 50.603764 29.396229 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 52.500004 27.499989 51.000000
+vertex 50.603764 29.396229 51.000000
+vertex 29.396229 29.396229 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 29.396229 29.396229 51.000000
+vertex 27.499989 27.499989 51.000000
+vertex 52.500004 27.499989 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 50.603764 50.603764 51.000000
+vertex 52.500004 52.500004 51.000000
+vertex 27.499989 52.500004 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 27.499989 52.500004 51.000000
+vertex 29.396229 50.603764 51.000000
+vertex 50.603764 50.603764 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 52.500004 52.500004 0.000000
+vertex 52.500004 27.499989 0.000000
+vertex 27.499989 27.499989 0.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 27.499989 27.499989 0.000000
+vertex 27.499989 52.500004 0.000000
+vertex 52.500004 52.500004 0.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 27.499989 52.500004 51.000000
+vertex 27.499989 52.500004 0.000000
+vertex 27.499989 27.499989 0.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 27.499989 27.499989 0.000000
+vertex 27.499989 27.499989 51.000000
+vertex 27.499989 52.500004 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 52.500004 27.499989 51.000000
+vertex 52.500004 27.499989 0.000000
+vertex 52.500004 52.500004 0.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 52.500004 52.500004 0.000000
+vertex 52.500004 52.500004 51.000000
+vertex 52.500004 27.499989 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 52.500004 27.499989 0.000000
+vertex 52.500004 27.499989 51.000000
+vertex 27.499989 27.499989 51.000000
+endloop
+endfacet
+facet normal 0 0 0
+outer loop
+vertex 27.499989 27.499989 51.000000
+vertex 27.499989 27.499989 0.000000
+vertex 52.500004 27.499989 0.000000
+endloop
+endfacet
+endsolid Exported from Blender-2.63 (sub 13)
