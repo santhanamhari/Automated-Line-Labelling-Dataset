@@ -26,6 +26,7 @@ conda create -n line_label python=3.10
 conda activate line_label
 
 # install dependencies
+cd Automated-Line-Labelling-Dataset
 pip install -r requirements.txt
 ```
 
