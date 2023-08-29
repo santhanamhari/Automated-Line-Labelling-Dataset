@@ -33,8 +33,8 @@ pip install -r requirements.txt
 Usage
 -------------
 We provide the code for generating our dataset in the `code` folder. 
-The `main.py` script processes the stl meshes from the `raw_meshes` folder and renders images (in `output`)
 
+The `main.py` script processes the stl meshes from the `raw_meshes` folder that are prescribed in `genus/total_genus.txt`
 
 
 To generate the dataset, run the following line of code:
