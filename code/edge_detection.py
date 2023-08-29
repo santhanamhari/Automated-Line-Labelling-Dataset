@@ -12,8 +12,6 @@ import bmesh
 import numpy as np
 from bpy_extras.object_utils import world_to_camera_view
 from mathutils.bvhtree import BVHTree
-#from pycocotools import mask 
-#from skimage import measure
 from mathutils import Vector
 import time
 import random
@@ -22,9 +20,6 @@ import ast
 import pickle
 import heapq
 
-# PATH
-#/Applications/blender.app/Contents/Resources/2.93/python/bin
-    
 
 # POINTS ON LINE-----------------------------------------------------------------------------------#
 def points_on_line(a_b, c, N, endpoint):

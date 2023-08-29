@@ -12,8 +12,6 @@ import bmesh
 import numpy as np
 from bpy_extras.object_utils import world_to_camera_view
 from mathutils.bvhtree import BVHTree
-#from pycocotools import mask 
-#from skimage import measure
 from mathutils import Vector
 import time
 import random
@@ -21,11 +19,6 @@ import json
 import ast
 import pickle
 import heapq
-
-#from edge_detection import *
-
-# PATH
-#/Applications/blender.app/Contents/Resources/2.93/python/bin
 
 # return the normal vector provided edge
 def normal(e):
@@ -431,8 +424,6 @@ def super_grouping(groups, n_dict, e_dict, final_cost=30):
 
         n_dict[str(n)] = new_dict
     
-
-
     # initially process groups
     for idx in range(len(groups)):
         g_orig = groups[idx].copy()
@@ -577,7 +568,6 @@ def super_grouping(groups, n_dict, e_dict, final_cost=30):
     return final_groups, final_groups_dict
 
 
-
 # decision criteria
 def decision_boundary(group, neighbor, final_cost, group_endpoints):
     group_normal = normal(group)
@@ -626,13 +616,11 @@ def decision_boundary(group, neighbor, final_cost, group_endpoints):
                 angle = angle_between(group_normal1[0], group_normal1[1], neighbor_normal1[0], neighbor_normal1[1])
                 angles.append(angle)
             
-
     for a in angles:
         if a < final_cost:
             return True
 
     return False
-    #return angle < final_cost
 
 
 def merge_supernode(group, neighbor, group_endpoints, count_endpoints, n_dict, e_dict, final_cost):
@@ -782,7 +770,7 @@ def merge_supernode(group, neighbor, group_endpoints, count_endpoints, n_dict, e
     return name
 
 
-# just sorts the groups and individual edges
+# sorts the groups and individual edges
 def group_process(g):
 
     g_copy = g.copy()
@@ -796,7 +784,7 @@ def group_process(g):
 
 
 # combine the edges with same slope and intersect
-def group_combine(g, flag = False): # may need to worry about discontinuous junctions here - have to fix???
+def group_combine(g, flag = False):
 
     for i in range(len(g)):
         to_delete = []
@@ -929,7 +917,6 @@ def sort_name(old_name):
 
 
 def find_neighbor_backward(new_name, old_name):
-
     endpoint = new_name[0][0]
     for i in range(len(old_name)):
         if endpoint in old_name[i]:
@@ -937,7 +924,6 @@ def find_neighbor_backward(new_name, old_name):
 
 
 def find_neighbor_forward(new_name, old_name):
-
     endpoint = new_name[len(new_name)-1][1]
     for i in range(len(old_name)):
         if endpoint in old_name[i]:
