@@ -177,7 +177,7 @@ def render_batch(model_list, group_dir, target_dir,  image_dir, n_views=1, resol
 if __name__ == "__main__":
 
     # load data
-    data = np.loadtxt("genus/genus.txt", int, delimiter=',')
+    data = np.loadtxt("genus/total_genus.txt", int, delimiter=',')
 
     # create directories
     if not os.path.exists("output/gt_edges"):
