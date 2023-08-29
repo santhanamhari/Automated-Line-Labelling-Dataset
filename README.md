@@ -34,7 +34,11 @@ Usage
 -------------
 We provide the code for generating our dataset in the `code` folder. 
 
-The `main.py` script processes the stl meshes from the `raw_meshes` folder that are prescribed in `genus/total_genus.txt`
+- `main.py` processes the stl meshes from the `raw_meshes` folder that are prescribed in `genus/total_genus.txt`
+
+- `edge_detection.py` extracts the contours and also classifies them as obscuring, concave, or convex. 
+
+- `group.py` performs initial grouping and fine-tuned grouping based on a heap's priority for grouping. 
 
 
 To generate the dataset, run the following line of code:
