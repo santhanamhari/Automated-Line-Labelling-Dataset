@@ -1,0 +1,4 @@
+Generated file structure: 
+	- rendered images (output/images)
+	- extracted/classified contours (output/gt_edges)
+	- grouped contours (output/groups)
