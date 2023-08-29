@@ -59,9 +59,11 @@ Results
 ----------
 
 Sample contour results (yellow - obscuring; blue - concave; green - convex)
+<img width="663" alt="final_gt_edges" src="https://github.com/santhanamhari/Automated-Line-Labelling-Dataset/assets/40223805/8f7ea309-fd1a-4461-a203-e4b7ef6a0868">
 
 
 Sample grouping results (unique colors indicate unique groups)
+<img width="660" alt="final_groups" src="https://github.com/santhanamhari/Automated-Line-Labelling-Dataset/assets/40223805/1a04f30c-717b-4d39-9dde-43da0fc2d4d3">
 
 
 Publication
