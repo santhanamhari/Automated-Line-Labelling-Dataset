@@ -42,7 +42,7 @@ We provide the code for generating our dataset in the `code` folder.
 - `group.py` performs initial grouping and fine-tuned grouping based on a heap's priority for grouping. 
 
 
-To generate the dataset, run the following line of code:
+To generate the sample dataset, run the following line of code:
 
 ```sh
 python3 code/main.py
